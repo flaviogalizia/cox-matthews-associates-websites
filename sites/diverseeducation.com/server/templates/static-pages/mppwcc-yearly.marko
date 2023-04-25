@@ -62,10 +62,10 @@ $ const cheeGoals = currentYearData ? currentYearData.cheeGoals: title;
           </div>
         </div>
       </@section>
-         <if(currentYearData && currentYearData.mpplogoSrc)>
-    <@section>
+      <if(currentYearData && currentYearData.mpplogoSrc)>
+        <@section>
           <div class="row">
-            <div class="col" align="center">  
+            <div class="col" align="center">
               <marko-web-img
                 class=["lazyload"]
                 alt="Promising Places to work logos"
@@ -92,7 +92,7 @@ $ const cheeGoals = currentYearData ? currentYearData.cheeGoals: title;
           </div>
         </@section>
       </if>
-$ const tableOneLabels = Object.values(getAsObject(currentYearData, "tableLabels.tableOne"));
+      $ const tableOneLabels = Object.values(getAsObject(currentYearData, "tableLabels.tableOne"));
       <if(currentYearData && tableOneLabels.length)>
         <@section modifiers=["card-deck"]>
           <table class="table table-responsive table-hover">
